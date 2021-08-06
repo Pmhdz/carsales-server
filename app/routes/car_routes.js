@@ -73,7 +73,7 @@ router.post('/cars', requireToken, (req, res, next) => {
 })
 
 // UPDATE
-// PATCH /examples/5a7db6c74d55bc51bdf39793
+// PATCH /cars
 router.patch('/cars/:id', requireToken, removeBlanks, (req, res, next) => {
   // if the client attempts to change the `owner` property by including a new
   // owner, prevent that by deleting that key/value pair
@@ -96,14 +96,14 @@ router.patch('/cars/:id', requireToken, removeBlanks, (req, res, next) => {
 })
 
 // DESTROY
-// DELETE /cars/5a7db6c74d55bc51bdf39793
+// DELETE /cars/
 router.delete('/cars/:id', requireToken, (req, res, next) => {
   Car.findById(req.params.id)
     .then(handle404)
     .then((car) => {
-      // throw an error if current user doesn't own `example`
+      // throw an error if current user doesn't own `car`
       requireOwnership(req, car)
-      // delete the example ONLY IF the above didn't throw
+      // car the example ONLY IF the above didn't throw
       car.deleteOne()
     })
   // send back 204 and no content if the deletion succeeded
