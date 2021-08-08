@@ -62,7 +62,7 @@ app.use(carRoutes)
 app.use(userRoutes)
 
 // register error handling middleware
-// note that this comes after the route middlewares, because it needs to be
+// note that this comes after the route middleware, because it needs to be
 // passed any error messages from them
 app.use(errorHandler)
 

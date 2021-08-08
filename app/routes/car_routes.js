@@ -3,7 +3,7 @@ const express = require('express')
 // Passport docs: http://www.passportjs.org/docs/
 const passport = require('passport')
 
-// pull in Mongoose model for examples
+// pull in Mongoose model for car
 const Car = require('../models/car')
 
 // this is a collection of methods that help us detect situations when we need
@@ -58,7 +58,7 @@ router.get('/cars/:id', requireToken, (req, res, next) => {
 // CREATE
 // POST /cars
 router.post('/cars', requireToken, (req, res, next) => {
-  // set owner of new cars  to be current user
+  // set owner of new cars to be current user
   req.body.car.owner = req.user.id
 
   Car.create(req.body.car)
