@@ -2,7 +2,7 @@
 
 ## Project Idea
 
- My project idea is to be a car salesman and check what cars are in the inventory. My classmate gave me a idea when we were discussing how our project is going to be and I have a lot of love for cars so I kind of thought it would be a good idea to start with. I use this project if I ever want to try out the automotive industry.
+ My project idea is to be a car salesman and check what cars are in the inventory. My classmate gave me a idea when we were discussing how our project is going to be and I have a lot of love for cars so I kind of thought it would be a good idea to start with. I use this project if I ever want to try out the automotive industry in general.
 
 ## User stories
 
