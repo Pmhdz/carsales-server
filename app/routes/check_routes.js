@@ -18,6 +18,7 @@ router.post('/checks', (req, res, next) => {
     .then(handle404)
     .then(car => {
       // add check to car
+      console.log(car)
       car.checks.push(checkData)
       // save car
       return car.save()

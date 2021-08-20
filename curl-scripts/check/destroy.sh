@@ -8,3 +8,5 @@ curl "http://localhost:4741/checks/${CHECK_ID}" \
     "check": {
       "carId": "'"${REST_ID}"'"
     }
+  }'
+  
