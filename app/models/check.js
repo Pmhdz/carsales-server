@@ -15,9 +15,9 @@ const checkSchema = new mongoose.Schema(
       required: true
     },
     checker: {
-      // References use the type ObjectId
+      // References ObjectId
       type: mongoose.Schema.Types.ObjectId,
-      // the name of the model to which they refer
+      // who is refer to
       ref: 'User'
     }
   },
