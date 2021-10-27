@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const checkSchema = require('./check')
+// const checkSchema = require('./check')
 
 const carSchema = new mongoose.Schema(
   {
@@ -22,7 +22,7 @@ const carSchema = new mongoose.Schema(
     //   required: true
     // }
     // Add a `reviews` subdocument array of type reviewSchema
-    checks: [checkSchema],
+    // checks: [checkSchema],
     // Add a `restaurants` subdocument array of Restaurant references
     cars: [
       {
